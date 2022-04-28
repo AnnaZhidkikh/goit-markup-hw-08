@@ -390,6 +390,47 @@ address {
   fill: var(--accent-color);
 }
 
+.mobile-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 250ms linear, visability 250ms linear;
+}
+
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.mobile-menu__close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  line-height: 0;
+  cursor: pointer;
+  transition: fill 250ms var(--time-distribution);
+}
+
+.mobile-menu__close-btn:hover {
+  fill: var(--accent-color);
+}
+
+.mobile-menu__container {
+  position: relative;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
 .nav-list {
   display: none;
 }
@@ -405,6 +446,7 @@ address {
 }
 
 .page-header {
+  position: relative;
   padding-top: 15px;
   padding-bottom: 15px;
   background-color: var(--primary-section-color);

@@ -10,6 +10,7 @@
   justify-content: space-between;
 }
 .page-header {
+  position: relative;
   padding-top: 15px;
   padding-bottom: 15px;
   background-color: var(--primary-section-color);
@@ -17,6 +18,13 @@
 }
 .logo__header {
   color: var(--primary-text-color);
+}
+
+/* === Модальное меню === */
+.mobile-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 /*.page-header {
     background-color: var(--primary-section-color);
