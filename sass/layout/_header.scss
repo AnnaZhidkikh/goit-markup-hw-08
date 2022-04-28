@@ -4,6 +4,20 @@
 .contact-list {
   display: none;
 }
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.page-header {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: var(--primary-section-color);
+  border-bottom: 1px solid #ECECEC;
+}
+.logo__header {
+  color: var(--primary-text-color);
+}
 /*.page-header {
     background-color: var(--primary-section-color);
     border-bottom: 1px solid #ECECEC;
