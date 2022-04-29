@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --primary-font-family: "Roboto", sans-serif;
   --secondary-font-family: "Raleway", sans-serif;
@@ -390,6 +391,33 @@ address {
   fill: var(--accent-color);
 }
 
+.nav-list {
+  display: none;
+}
+
+.contact-list {
+  display: none;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-header {
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: var(--primary-section-color);
+  border-bottom: 1px solid #ECECEC;
+}
+
+.logo__header {
+  color: var(--primary-text-color);
+}
+
+/* === Модальное меню === */
 .mobile-menu {
   position: absolute;
   top: 0;
@@ -429,32 +457,6 @@ address {
   position: relative;
   padding-top: 48px;
   padding-bottom: 48px;
-}
-
-.nav-list {
-  display: none;
-}
-
-.contact-list {
-  display: none;
-}
-
-.header-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.page-header {
-  position: relative;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  background-color: var(--primary-section-color);
-  border-bottom: 1px solid #ECECEC;
-}
-
-.logo__header {
-  color: var(--primary-text-color);
 }
 
 /*.page-header {
