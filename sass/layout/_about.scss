@@ -1,3 +1,48 @@
+
+//0px - 767px - мобильные устройства
+@media screen and (max-width: 767px) {
+  .section-about__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+    margin-bottom: 10px;
+  }
+  .section-about-text {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+  
+  }
+
+  .text-content-icon {
+    //@extend %align;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 120px;
+    background-color: var(--team-background-color);
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+  
+  .section-about-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .section-about-text-element {
+    color: var(--primary-section-color);
+    //padding-bottom: 47px;
+  }
+  
+}
+/*
 .text-content-icon {
     @extend %align;
     width: 270px;
@@ -80,3 +125,4 @@
     width: 370px;
     height: 70px;
   }
+  */
