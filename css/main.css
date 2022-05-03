@@ -199,12 +199,19 @@ address {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  height: 580px;
+  width: 450px;
+  height: 609px;
   background-color: var(--primary-section-color);
   padding: 40px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 580px;
+  }
 }
 
 .modal-close-btn {
@@ -326,9 +333,8 @@ address {
 .contact-form-checkbox-label {
   display: flex;
   align-items: center;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
@@ -353,6 +359,14 @@ address {
   background-size: cover;
   background-image: url(../img/icon-check.svg);
   background-color: var(--accent-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-form-checkbox-label {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.14;
+  }
 }
 
 .agreement {
@@ -396,6 +410,7 @@ address {
   visibility: hidden;
   pointer-events: none;
   transition: opacity 250ms linear, visability 250ms linear;
+  z-index: 1;
 }
 
 .mobile-menu.is-open {

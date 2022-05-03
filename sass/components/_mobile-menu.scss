@@ -10,6 +10,7 @@
     visibility: hidden;
     pointer-events: none;
     transition: opacity 250ms linear, visability 250ms linear;
+    z-index: 1;
   }
   .mobile-menu.is-open {
     opacity: 1;
