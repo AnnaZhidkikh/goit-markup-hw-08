@@ -1,6 +1,6 @@
 .social-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center
   }
   .social-list__link {
     @extend %align;
@@ -22,4 +22,10 @@
     .social-list__link:focus & {
       fill: white;
    }
+  }
+  @media screen and (min-width: 1200px) {
+    .social-list {
+      display: flex;
+      justify-content: space-between;
+    }
   }

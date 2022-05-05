@@ -25,6 +25,9 @@
   margin-bottom: 30px;
 }
 @media screen and (max-width: 767px) {
+  .section-about {
+    display: none;
+  }
  .section-about-list {
   display: flex;
   flex-direction: column;
@@ -33,7 +36,9 @@
  }
 }
 @media screen and (min-width: 768px) {
-  
+  .section-about {
+    display: none;
+  }
   .text-content-icon {
     width: 354px;
   }
@@ -44,6 +49,9 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .section-about {
+    display: flex;
+  }
   .text-content-icon {
     width: 270px;
   }
@@ -91,6 +99,7 @@
 }
 
 /* === Секция чем занимаемся === */
+
 .section-about {
   color: var(--primary-section-color);
   padding-top: 47px;
@@ -134,6 +143,7 @@
   width: 370px;
   height: 70px;
 }
+
 /*.text-content-icon {
     @extend %align;
     width: 270px;
