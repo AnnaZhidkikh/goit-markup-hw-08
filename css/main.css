@@ -818,6 +818,7 @@ address {
 }
 
 .section-about__title {
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -838,7 +839,6 @@ address {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 450px;
   height: 120px;
   background-color: var(--team-background-color);
   border-radius: 4px;
@@ -846,6 +846,9 @@ address {
 }
 
 @media screen and (max-width: 767px) {
+  .section-content-icon {
+    width: 450px;
+  }
   .section-about {
     display: none;
   }
@@ -853,7 +856,6 @@ address {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
   }
 }
 
@@ -1071,28 +1073,22 @@ address {
 
 .section-client-title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .clients-list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: -15px;
 }
 
 .client-list-item {
-  margin-right: 30px;
-}
-
-.client-list-item:last-child {
-  margin-right: 0px;
-}
-
-.client-list-link {
-  width: 170px;
+  width: calc((100% - 4 * 15px) / 2);
+  margin: 15px;
   height: 92px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
@@ -1100,10 +1096,40 @@ address {
   transition: border-color 250ms var(--time-distribution);
 }
 
-.client-list-link:hover, .client-list-link:focus {
-  border-color: var(--accent-color);
-  color: var(--accent-color);
-  cursor: pointer;
+@media screen and (min-width: 768px) {
+  .client-list-item {
+    width: calc((100% - 6 * 15px) / 3);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .client-list-item {
+    width: calc((100% - 12 * 15px) / 6);
+  }
+}
+
+.client-list-item:hover, .client-list-item:focus {
+  border: 1px solid var(--accent-color);
+}
+
+.client-list-link {
+  width: 170px;
+  height: 92px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-client-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+  }
+  .clients-list {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .client-list-icon {
@@ -1116,6 +1142,99 @@ address {
   fill: var(--accent-color);
 }
 
+/*
+  .section-client-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 30px;
+}
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.client-list-link {
+  @extend %align;
+  height: 92px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 250ms var(--time-distribution);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+    cursor: pointer;
+  }
+
+@media screen and (max-width: 767px) {
+    width: 210px;
+}
+
+@media screen and (min-width: 768px) {
+    width: 226px;
+}
+
+@media screen and (min-width: 1200px) {
+  width: 170px;
+ }
+}
+@media screen and (min-width: 1200px) {
+  .section-client-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+  }
+  .clients-list {
+    display: flex;
+    justify-content: space-between;
+  }
+ 
+}
+  
+  .client-list-item {
+    @extend %align;
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+  .client-list-link {
+    @extend %align;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 250ms var(--time-distribution);
+
+    &:hover,
+    &:focus {
+      border-color: var(--accent-color);
+      color: var(--accent-color);
+      cursor: pointer;
+    }
+  }
+  
+  
+  .client-list-icon {
+    fill: #AFB1B8;
+    transition: fill 250ms var(--time-distribution);
+
+    .client-list-link:hover &,
+    .client-list-link:focus & {
+      fill: var(--accent-color);
+      } 
+  }
+  */
 .portfolio-gallery-btn {
   display: flex;
   justify-content: start;

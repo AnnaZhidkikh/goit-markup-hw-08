@@ -212,12 +212,30 @@
       </div>
     </section> 
     <!-- Секция Наша команда -->
-    <!--<section class="section-team section">
+   <section class="section-team section">
       <div class="container">
         <h2 class="section-team__title title">Наша команда</h2>
         <ul class="team list">
           <li class="section-team-list">
-            <img class="section-team-img" src="./img/team-img-1.jpg" alt="Игорь Демьяненко" width="270" height="260" />
+            <picture>
+              <source srcset="./img/team/team-img-desk-1@1x.webp 1x, ./img/team/team-img-desk-1@2x.webp 2x" 
+              media="(min-width: 1200px)"
+              type="image/webp" >
+              <source srcset="./img/team/team-img-desk-1@1x.jpg 1x, ./img/team/team-img-desk-1@2x.jpg 2x" 
+              media="(min-width: 1200px)" >
+              <source srcset="./img/team/team-img-tab-1@1x.webp 1x, ./img/team/team-img-tab-1@2x.webp 2x" 
+              media="(min-width: 768px)" 
+              type="image/webp">
+              <source srcset="./img/team/team-img-tab-1@1x.jpg 1x, ./img/team/team-img-tab-1@2x.jpg 2x" 
+              media="(min-width: 768px)" >
+              <source srcset="./img/team/team-img-mob-1@1x.webp 1x, ./img/team/team-img-mob-1@2x.webp 2x" 
+              media="(max-width: 767px)" 
+              type="image/webp">
+              <source srcset="./img/team/team-img-mob-1@1x.jpg 1x, ./img/team/team-img-mob-1@2x.jpg 2x" 
+              media="(max-width: 767px)" >
+            <img class="section-team-img" src="./img/team-img-1.jpg" alt="Игорь Демьяненко" 
+            width="450" height="460" />
+          </picture>
             <div class="team-member-content-wrapper">
               <h3 class="team-member-name">Игорь Демьяненко</h3>
               <p class="profession">Product Designer</p>
@@ -254,7 +272,25 @@
             </div>
           </li>
           <li class="section-team-list">
-            <img class="section-team-img" src="./img/team-img-2.jpg" alt="Ольга Репина" width="270" height="260" />
+            <picture>
+              <source srcset="./img/team/team-img-desk-2@1x.webp 1x, ./img/team/team-img-desk-2@2x.webp 2x" 
+              media="(min-width: 1200px)" 
+              type="image/webp">
+              <source srcset="./img/team/team-img-desk-2@1x.jpg 1x, ./img/team/team-img-desk-2@2x.jpg 2x" 
+              media="(min-width: 1200px)" >
+              <source srcset="./img/team/team-img-tab-2@1x.webp 1x, ./img/team/team-img-tab-2@2x.webp 2x" 
+              media="(min-width: 768px)" 
+              type="image/webp">
+              <source srcset="./img/team/team-img-tab-2@1x.jpg 1x, ./img/team/team-img-tab-2@2x.jpg 2x" 
+              media="(min-width: 768px)" >
+              <source srcset="./img/team/team-img-mob-2@1x.webp 1x, ./img/team/team-img-mob-2@2x.webp 2x" 
+              media="(max-width: 767px)" 
+              type="image/webp">
+              <source srcset="./img/team/team-img-mob-2@1x.jpg 1x, ./img/team/team-img-mob-2@2x.jpg 2x" 
+              media="(max-width: 767px)" >
+              <img class="section-team-img" src="./img/team-img-2.jpg" alt="Ольга Репина" 
+              width="450" height="460" />
+          </picture>
             <div class="team-member-content-wrapper">
               <h3 class="team-member-name">Ольга Репина</h3>
               <p class="profession">Frontend Developer</p>
@@ -291,7 +327,25 @@
             </div>
           </li>
           <li class="section-team-list">
-            <img class="section-team-img" src="./img/team-img-3.jpg" alt="Николай Тарасов" width="270" height="260" />
+            <picture>
+              <source srcset="./img/team/team-img-desk-3@1x.webp 1x, ./img/team/team-img-desk-3@2x.webp 2x" 
+              media="(min-width: 1200px)" 
+              type="image/webp">
+              <source srcset="./img/team/team-img-desk-3@1x.jpg 1x, ./img/team/team-img-desk-3@2x.jpg 2x" 
+              media="(min-width: 1200px)" >
+              <source srcset="./img/team/team-img-tab-3@1x.webp 1x, ./img/team/team-img-tab-3@2x.webp 2x" 
+              media="(min-width: 768px)" 
+              type="image/webp">
+              <source srcset="./img/team/team-img-tab-3@1x.jpg 1x, ./img/team/team-img-tab-3@2x.jpg 2x" 
+              media="(min-width: 768px)" >
+              <source srcset="./img/team/team-img-mob-3@1x.webp 1x, ./img/team/team-img-mob-3@2x.webp 2x" 
+              media="(max-width: 767px)" 
+              type="image/webp">
+              <source srcset="./img/team/team-img-mob-3@1x.jpg 1x, ./img/team/team-img-mob-3@2x.jpg 2x" 
+              media="(max-width: 767px)" >
+            <img class="section-team-img" src="./img/team-img-3.jpg" alt="Николай Тарасов" 
+            width="450" height="460" />
+          </picture>
             <div class="team-member-content-wrapper">
               <h3 class="team-member-name">Николай Тарасов</h3>
               <p class="profession">Marketing</p>
@@ -329,7 +383,25 @@
           </li>
 
           <li class="section-team-list">
-            <img class="section-team-img" src="./img/team-img-4.jpg" alt="Михаил Ермаков" width="270" height="260" />
+            <picture>
+              <source srcset="./img/team/team-img-desk-4@1x.webp 1x, ./img/team/team-img-desk-4@2x.webp 2x" 
+              media="(min-width: 1200px)" 
+              type="image/webp">
+              <source srcset="./img/team/team-img-desk-4@1x.jpg 1x, ./img/team/team-img-desk-4@2x.jpg 2x" 
+              media="(min-width: 1200px)" >
+              <source srcset="./img/team/team-img-tab-4@1x.webp 1x, ./img/team/team-img-tab-4@2x.webp 2x" 
+              media="(min-width: 768px)" 
+              type="image/webp">
+              <source srcset="./img/team/team-img-tab-4@1x.jpg 1x, ./img/team/team-img-tab-4@2x.jpg 2x" 
+              media="(min-width: 768px)" >
+              <source srcset="./img/team/team-img-mob-4@1x.webp 1x, ./img/team/team-img-mob-4@2x.webp 2x" 
+              media="(max-width: 767px)" 
+              type="image/webp">
+              <source srcset="./img/team/team-img-mob-4@1x.jpg 1x, ./img/team/team-img-mob-4@2x.jpg 2x" 
+              media="(max-width: 767px)" >
+            <img class="section-team-img" src="./img/team-img-4.jpg" alt="Михаил Ермаков" 
+            width="450" height="460" />
+          </picture>
             <div class="team-member-content-wrapper">
               <h3 class="team-member-name">Михаил Ермаков</h3>
               <p class="profession">UI Designer</p>
@@ -367,9 +439,9 @@
           </li>
         </ul>
       </div>
-    </section> -->
+    </section> 
     <!-- Секция постоянные клиенты -->
-    <!--<section class="section-client section">
+    <section class="section-client section">
       <div class="container">
         <h2 class="section-client-title">Постоянные клиенты</h2>
         <ul class="clients-list list">
@@ -417,7 +489,7 @@
           </li>
         </ul>
       </div>
-    </section> -->
+    </section>
   </main>
   <!-- Подвал страницы -->
    <footer class="section-footer">
