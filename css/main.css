@@ -1947,6 +1947,7 @@ address {
     flex-direction: column;
     margin-left: 0px;
     margin-right: 0px;
+    margin-bottom: 0;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
